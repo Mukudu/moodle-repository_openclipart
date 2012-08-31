@@ -27,7 +27,7 @@ define('OPENCLIPART_URL', 'http://openclipart.org/media/feed/rss/');			//defaul 
 define('DEFAULT_IMAGE_HEIGHT', 320);			//default height in pixels
 define('DEFAULT_THUMBNAIL_HEIGHT', 90);			//default height in pixels - default thumbnails from Open Clipart
 define('DEFAULT_MAX_FILES', 50);			//default height in pixels - default thumbnails from Open Clipart
-  
+
 /**
  * repository_openclipart class
  * This is a class used to browse images from openclipart
@@ -48,7 +48,7 @@ class repository_openclipart extends repository {
      */
     public function __construct($repositoryid, $context = SITEID, $options = array()) {
         parent::__construct($repositoryid, $context, $options);
-        
+
         $conf = get_config('repository_openclipart');
         if (!isset($conf->imageheight)) {					//empty object??
 	        $this->_setconfig();
@@ -59,20 +59,20 @@ class repository_openclipart extends repository {
 		        $conf->imageheight = DEFAULT_IMAGE_HEIGHT;
 		        set_config('imageheight', $conf->imageheight, 'repository_openclipart');
 	        }
-	        
+
 	        if ($conf->maxfiles < 10 || $conf->maxfiles > 500) {
-		        error_log('Resetting max files');		        
+		        error_log('Resetting max files');
 		        $conf->maxfiles = DEFAULT_MAX_FILES;
 		        set_config('maxfiles', $conf->maxfiles, 'repository_openclipart');
 	        }
-	        
+
 	        //now setup
 	        $this->imageheight = (int) $conf->imageheight;
 	        $this->maxfiles = (int) $conf->maxfiles;
         }
     }
-    
-    
+
+
     /**
      * ensure the configuartion is set to defaults
      */
@@ -155,26 +155,26 @@ class repository_openclipart extends repository {
      */
     public function type_config_form($mform) {
         parent::type_config_form($mform);			//name for the repo
-    
+
 	    $conf = get_config('repository_openclipart');
-	    if (!isset($conf->imageheight)) {			//then we reset config 
+	    if (!isset($conf->imageheight)) {			//then we reset config
 			$this->_setconfig();					//this will set the params
 		}
-		
+
 		//image height
         $mform->addElement('text', 'imageheight', get_string('imageheight', 'repository_openclipart'));
         $mform->setDefault('imageheight', $conf->imageheight);
-        $mform->setType('imageheight', PARAM_INT); 
-        $mform->addElement('static', 'stat1', '', get_string('imageheight_help', 'repository_openclipart', DEFAULT_IMAGE_HEIGHT)); 
-        
+        $mform->setType('imageheight', PARAM_INT);
+        $mform->addElement('static', 'stat1', '', get_string('imageheight_help', 'repository_openclipart', DEFAULT_IMAGE_HEIGHT));
+
         //file numbers
         $mform->addElement('text', 'maxfiles', get_string('maxfiles', 'repository_openclipart'));
         $mform->setDefault('maxfiles', $conf->maxfiles);
-        $mform->setType('maxfiles', PARAM_INT); 
+        $mform->setType('maxfiles', PARAM_INT);
         $mform->addElement('static', 'stat2', '', get_string('maxfiles_help', 'repository_openclipart',DEFAULT_MAX_FILES));
-        
+
     }
-  
+
 
     /**
      * Supports file linking and copying
@@ -183,64 +183,70 @@ class repository_openclipart extends repository {
      */
     public function supported_returntypes() {
 	    return FILE_INTERNAL | FILE_EXTERNAL;		//does not appear to work if I return just FILE_EXTERNAL
-        
+
         // From moodle 2.3, we support file reference
         // see moodle docs for more information
         //return FILE_INTERNAL | FILE_EXTERNAL | FILE_REFERENCE;
-        
+
     }
-    
-    
-	private function _getfilelist($request, $vpath) {
-	    global $CFG;
-	    require_once($CFG->libdir.'/simplepie/moodle_simplepie.php');
-	    
-	    $list = array();
-	    $list['list'] = array();
-	
-	    // the management interface url
-	    $list['manage'] = false;
-	    // dynamically loading
-	    $list['dynload'] = false;
-	
-	    // the current path of this list.
-	    $list['path'] = array(
-	        array('name'=>'root', 'path'=>''),
-	        array('name'=>$vpath, 'path'=>''),
+
+    /**
+     * internal function to get listing from openclipart.com
+     *
+     * @param string $request the url to call
+     * @param string $vpath - the 'pretend' path to show in the interface
+     * @return int
+     */
+    private function _getfilelist($request, $vpath) {
+        global $CFG;
+        require_once($CFG->libdir.'/simplepie/moodle_simplepie.php');
+
+        $list = array();
+        $list['list'] = array();
+
+        // the management interface url
+        $list['manage'] = false;
+        // dynamically loading
+        $list['dynload'] = false;
+
+        // the current path of this list.
+        $list['path'] = array(
+            array('name'=>'root', 'path'=>''),
+            array('name'=>$vpath, 'path'=>''),
         );
-	    // set to true, the login link will be removed
-	    $list['nologin'] = true;
-	    // set to true, the search button will be removed
-	    $list['nosearch'] = false;
-	
-	    $feed = new moodle_simplepie($request);
-	
-		if (!$feed->error()) {
-		    $feeditems = $feed->get_items(0, $this->maxfiles);
-		    foreach($feeditems as $item){
-			    //do some fancy stuff with the filename
-			    $thumbnail = $item->get_enclosure(0)->get_thumbnail();
-			    $filename = basename($thumbnail);
-			    $pattern = '|\/' . DEFAULT_THUMBNAIL_HEIGHT . 'px|';
-	    		$source = preg_replace($pattern, '/'. $this->imageheight . 'px', $thumbnail);
-		
-		        $clipartfile = array(
-		            'title'     => $filename,			//this is the filename not really the title
-		            'author'    => $item->get_author(0)->get_name(),
-		            'date'  =>  $item->get_date('j F Y | g:i a'),
-		            'thumbnail'=> $thumbnail,
-		            'thumbnail_width' => DEFAULT_THUMBNAIL_HEIGHT,
-		            'source'=> $source,
-		            'url'=> $item->get_permalink(),
-		        );
-		        //stick it onto the file list
-		        $list['list'][] = $clipartfile;
-		    }
-	    }else{
-		    debugging('Feed Error: ' . $feed->error(), DEBUG_DEVELOPER);
-	    }
-	
-	    return $list;
-	}
+        // set to true, the login link will be removed
+        $list['nologin'] = true;
+        // set to true, the search button will be removed
+        $list['nosearch'] = false;
+
+        $feed = new moodle_simplepie($request);
+
+            if (!$feed->error()) {
+                $feeditems = $feed->get_items(0, $this->maxfiles);
+                foreach($feeditems as $item){
+                        //do some fancy stuff with the filename
+                        $thumbnail = $item->get_enclosure(0)->get_thumbnail();
+                        $filename = basename($thumbnail);
+                        $pattern = '|\/' . DEFAULT_THUMBNAIL_HEIGHT . 'px|';
+                    $source = preg_replace($pattern, '/'. $this->imageheight . 'px', $thumbnail);
+
+                    $clipartfile = array(
+                        'title'     => $filename,			//this is the filename not really the title
+                        'author'    => $item->get_author(0)->get_name(),
+                        'date'  =>  $item->get_date('j F Y | g:i a'),
+                        'thumbnail'=> $thumbnail,
+                        'thumbnail_width' => DEFAULT_THUMBNAIL_HEIGHT,
+                        'source'=> $source,
+                        'url'=> $item->get_permalink(),
+                    );
+                    //stick it onto the file list
+                    $list['list'][] = $clipartfile;
+                }
+        }else{
+                debugging('Feed Error: ' . $feed->error(), DEBUG_DEVELOPER);
+        }
+
+        return $list;
+    }
 }
 /* ?>  */
