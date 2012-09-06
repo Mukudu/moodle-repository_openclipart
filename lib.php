@@ -77,7 +77,7 @@ class repository_openclipart extends repository {
      * ensure the configuartion is set to defaults
      */
     private function _setconfig() {
-	    error_log("Resetting config");
+	error_log("Resetting config");
         $this->imageheight = DEFAULT_IMAGE_HEIGHT;
         $this->maxfiles = DEFAULT_MAX_FILES;
         set_config('imageheight', $this->imageheight, 'repository_openclipart');
@@ -154,12 +154,12 @@ class repository_openclipart extends repository {
      * config form  @TODO saving is not happening......
      */
     public function type_config_form($mform) {
-        parent::type_config_form($mform);			//name for the repo
+        parent::type_config_form($mform);	//name for the repo
 
-	    $conf = get_config('repository_openclipart');
-	    if (!isset($conf->imageheight)) {			//then we reset config
-			$this->_setconfig();					//this will set the params
-		}
+        $conf = get_config('repository_openclipart');
+//        if (!isset($conf->imageheight)) {	//then we reset config
+//                    $this->_setconfig();	//this will set the params
+//        }
 
 		//image height
         $mform->addElement('text', 'imageheight', get_string('imageheight', 'repository_openclipart'));
