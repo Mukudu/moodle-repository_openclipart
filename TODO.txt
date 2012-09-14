@@ -1,0 +1,7 @@
+TO DO 
+======
+1. Config settings - DONE
+2. Codechecks
+3. Documentation
+4. Paging
+5. Caching???

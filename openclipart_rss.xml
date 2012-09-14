@@ -1,248 +1,250 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <rss version="2.0"
-   xmlns:content="http://purl.org/rss/1.0/modules/content/"
-   xmlns:cc="http://web.resource.org/cc/"
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
-   xmlns:media="http://search.yahoo.com/mrss/"
-   xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>OpenClipart.org</title>
-    <atom:link rel="self" href="http://openclipart.org/media/feed/rss/" type="application/rss+xml"></atom:link>
-    <link>http://openclipart.org</link>
-    <description>Download, Sample, Cut-up, Share.</description>
-    <language>en-US</language>
-    <image>
-      <url>http://openclipart.org/assets/images/images/logo-no-text.jpg</url>
-      <link>http://openclipart.org</link>
-      <title>OpenClipart.org</title>
-      <height>93</height>
-      <width>114</width>
-    </image>
-    <item>
-      <title>Supergirl</title>
-      <link>http://openclipart.org/detail/63/supergirl-by-rejon</link>
-      <pubDate>Tue, 29 Aug 2006 13:30:14 -0400</pubDate>
-      <dc:creator>rejon</dc:creator>
-      <description>This is a traced image of liyuchun.</description>
-      <enclosure url="http://openclipart.org/people/rejon/rejon_Supergirl.svg" type="image/svg+xml" length="292279"></enclosure>
-      <guid>http://openclipart.org/detail/63/supergirl-by-rejon</guid>
-      <cc:license>http://creativecommons.org/licenses/publicdomain</cc:license>
-      <media:thumbnail url="http://openclipart.org/image/90px/svg_to_png/63/rejon_Supergirl.png"></media:thumbnail>
-    </item>
-    <item>
-      <title>Rejon's Head</title>
-      <link>http://openclipart.org/detail/64/rejons-head-by-rejon</link>
-      <pubDate>Tue, 29 Aug 2006 13:46:28 -0400</pubDate>
-      <dc:creator>rejon</dc:creator>
-      <description>This is a vectorized version of my head that is used on various websites that use http://planetplanet.org.</description>
-      <enclosure url="http://openclipart.org/people/rejon/rejon_Rejon_s_Head.svg" type="image/svg+xml" length="32924"></enclosure>
-      <guid>http://openclipart.org/detail/64/rejons-head-by-rejon</guid>
-      <cc:license>http://creativecommons.org/licenses/publicdomain</cc:license>
-      <media:thumbnail url="http://openclipart.org/image/90px/svg_to_png/64/rejon_Rejon_s_Head.png"></media:thumbnail>
-    </item>
-    <item>
-      <title>ant</title>
-      <link>http://openclipart.org/detail/66/ant-by-andy</link>
-      <pubDate>Tue, 29 Aug 2006 16:35:08 -0400</pubDate>
-      <dc:creator>Andy</dc:creator>
-      <description>Balanced ant design with specularity</description>
-      <enclosure url="http://openclipart.org/people/Andy/Andy_ant.svg" type="image/svg+xml" length="6363"></enclosure>
-      <guid>http://openclipart.org/detail/66/ant-by-andy</guid>
-      <cc:license>http://creativecommons.org/licenses/publicdomain</cc:license>
-      <media:thumbnail url="http://openclipart.org/image/90px/svg_to_png/66/Andy_ant.png"></media:thumbnail>
-    </item>
-    <item>
-      <title>Tools, Hammer, Spanner</title>
-      <link>http://openclipart.org/detail/67/tools-hammer-spanner-by-andy</link>
-      <pubDate>Tue, 29 Aug 2006 17:16:52 -0400</pubDate>
-      <dc:creator>Andy</dc:creator>
-      <description>A very glossy yet socialist looking hammer and spanner ;-)
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:cc="http://web.resource.org/cc/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+     xmlns:media="http://search.yahoo.com/mrss/"
+     xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>OpenClipart.org</title>
+        <atom:link rel="self" href="http://openclipart.org/media/feed/rss/" type="application/rss+xml"></atom:link>
+        <link>http://openclipart.org</link>
+        <description>Download, Sample, Cut-up, Share.</description>
+        <language>en-US</language>
+        <image>
+            <url>http://openclipart.org/assets/images/images/logo-no-text.jpg</url>
+            <link>http://openclipart.org</link>
+            <title>OpenClipart.org</title>
+            <height>93</height>
+            <width>114</width>
+        </image>
+        <item>
+            <title>Supergirl</title>
+            <link>http://openclipart.org/detail/63/supergirl-by-rejon</link>
+            <pubDate>Tue, 29 Aug 2006 13:30:14 -0400</pubDate>
+            <dc:creator>rejon</dc:creator>
+            <description>This is a traced image of liyuchun.</description>
+            <enclosure url="http://openclipart.org/people/rejon/rejon_Supergirl.svg" type="image/svg+xml" length="292279"></enclosure>
+            <guid>http://openclipart.org/detail/63/supergirl-by-rejon</guid>
+            <cc:license>http://creativecommons.org/licenses/publicdomain</cc:license>
+            <media:thumbnail url="http://openclipart.org/image/90px/svg_to_png/63/rejon_Supergirl.png"></media:thumbnail>
+        </item>
+        <item>
+            <title>Rejon's Head</title>
+            <link>http://openclipart.org/detail/64/rejons-head-by-rejon</link>
+            <pubDate>Tue, 29 Aug 2006 13:46:28 -0400</pubDate>
+            <dc:creator>rejon</dc:creator>
+            <description>This is a vectorized version of my head that is used on various websites that use http://planetplanet.org.</description>
+            <enclosure url="http://openclipart.org/people/rejon/rejon_Rejon_s_Head.svg" type="image/svg+xml" length="32924"></enclosure>
+            <guid>http://openclipart.org/detail/64/rejons-head-by-rejon</guid>
+            <cc:license>http://creativecommons.org/licenses/publicdomain</cc:license>
+            <media:thumbnail url="http://openclipart.org/image/90px/svg_to_png/64/rejon_Rejon_s_Head.png"></media:thumbnail>
+        </item>
+        <item>
+            <title>ant</title>
+            <link>http://openclipart.org/detail/66/ant-by-andy</link>
+            <pubDate>Tue, 29 Aug 2006 16:35:08 -0400</pubDate>
+            <dc:creator>Andy</dc:creator>
+            <description>Balanced ant design with specularity</description>
+            <enclosure url="http://openclipart.org/people/Andy/Andy_ant.svg" type="image/svg+xml" length="6363"></enclosure>
+            <guid>http://openclipart.org/detail/66/ant-by-andy</guid>
+            <cc:license>http://creativecommons.org/licenses/publicdomain</cc:license>
+            <media:thumbnail url="http://openclipart.org/image/90px/svg_to_png/66/Andy_ant.png"></media:thumbnail>
+        </item>
+        <item>
+            <title>Tools, Hammer, Spanner</title>
+            <link>http://openclipart.org/detail/67/tools-hammer-spanner-by-andy</link>
+            <pubDate>Tue, 29 Aug 2006 17:16:52 -0400</pubDate>
+            <dc:creator>Andy</dc:creator>
+            <description>A very glossy yet socialist looking hammer and spanner ;-)
 
-[b]
-Contains internal stylesheet with configurable specularity, shade outlines and internal stroke-highlights.[/b]</description>
-      <enclosure url="http://openclipart.org/people/Andy/Andy_Tools_Hammer_Spanner.svg" type="image/svg+xml" length="8657"></enclosure>
-      <guid>http://openclipart.org/detail/67/tools-hammer-spanner-by-andy</guid>
-      <cc:license>http://creativecommons.org/licenses/publicdomain</cc:license>
-      <media:thumbnail url="http://openclipart.org/image/90px/svg_to_png/67/Andy_Tools_Hammer_Spanner.png"></media:thumbnail>
-    </item>
-    <item>
-      <title>Trash Can</title>
-      <link>http://openclipart.org/detail/68/trash-can-by-andy</link>
-      <pubDate>Tue, 29 Aug 2006 17:30:49 -0400</pubDate>
-      <dc:creator>Andy</dc:creator>
-      <description>Trans can. Not as clean as it could be ( pun intended ) but clean enough to publish and make useful.
+                [b]
+                Contains internal stylesheet with configurable specularity, shade outlines and internal stroke-highlights.[/b]
+            </description>
+            <enclosure url="http://openclipart.org/people/Andy/Andy_Tools_Hammer_Spanner.svg" type="image/svg+xml" length="8657"></enclosure>
+            <guid>http://openclipart.org/detail/67/tools-hammer-spanner-by-andy</guid>
+            <cc:license>http://creativecommons.org/licenses/publicdomain</cc:license>
+            <media:thumbnail url="http://openclipart.org/image/90px/svg_to_png/67/Andy_Tools_Hammer_Spanner.png"></media:thumbnail>
+        </item>
+        <item>
+            <title>Trash Can</title>
+            <link>http://openclipart.org/detail/68/trash-can-by-andy</link>
+            <pubDate>Tue, 29 Aug 2006 17:30:49 -0400</pubDate>
+            <dc:creator>Andy</dc:creator>
+            <description>Trans can. Not as clean as it could be ( pun intended ) but clean enough to publish and make useful.
 
-[b]This illustration uses clean SVG with a separated  area to theme elements in the design. Open it up in a plain text editor before loading into your favorite SVG editor for a world of fun[/b]</description>
-      <enclosure url="http://openclipart.org/people/Andy/Andy_Trash_Can.svg" type="image/svg+xml" length="10738"></enclosure>
-      <guid>http://openclipart.org/detail/68/trash-can-by-andy</guid>
-      <cc:license>http://creativecommons.org/licenses/publicdomain</cc:license>
-      <media:thumbnail url="http://openclipart.org/image/90px/svg_to_png/68/Andy_Trash_Can.png"></media:thumbnail>
-    </item>
-    <item>
-      <title>Ant Icon</title>
-      <link>http://openclipart.org/detail/69/ant-icon-by-rejon</link>
-      <pubDate>Tue, 29 Aug 2006 21:35:51 -0400</pubDate>
-      <dc:creator>rejon</dc:creator>
-      <description>This is a lame flat version of Andy's ant ready for use as a solid element in a logo or on a poster.</description>
-      <enclosure url="http://openclipart.org/people/rejon/rejon_Ant_Icon.svg" type="image/svg+xml" length="8869"></enclosure>
-      <guid>http://openclipart.org/detail/69/ant-icon-by-rejon</guid>
-      <cc:license>http://creativecommons.org/licenses/publicdomain</cc:license>
-      <media:thumbnail url="http://openclipart.org/image/90px/svg_to_png/69/rejon_Ant_Icon.png"></media:thumbnail>
-    </item>
-    <item>
-      <title>Nicu's crash cchost file (fixed)</title>
-      <link>http://openclipart.org/detail/70/nicus-crash-cchost-file-by-rejon</link>
-      <pubDate>Tue, 29 Aug 2006 23:26:09 -0400</pubDate>
-      <dc:creator>rejon</dc:creator>
-      <description>Nicu said this would crash ccHost, but I fixed it so it does not!</description>
-      <enclosure url="http://openclipart.org/people/rejon/rejon_Nicu_s_crash_cchost_file.svg" type="image/svg+xml" length="67432"></enclosure>
-      <guid>http://openclipart.org/detail/70/nicus-crash-cchost-file-by-rejon</guid>
-      <cc:license>http://creativecommons.org/licenses/publicdomain</cc:license>
-      <media:thumbnail url="http://openclipart.org/image/90px/svg_to_png/70/rejon_Nicu_s_crash_cchost_file.png"></media:thumbnail>
-    </item>
-    <item>
-      <title>House Outlines</title>
-      <link>http://openclipart.org/detail/71/house-outlines-by-rejon</link>
-      <pubDate>Tue, 29 Aug 2006 23:49:34 -0400</pubDate>
-      <dc:creator>rejon</dc:creator>
-      <description>This is a nice house outline I traced and abstracted in Inkscape.</description>
-      <enclosure url="http://openclipart.org/people/rejon/rejon_House_Outlines.svg" type="image/svg+xml" length="144058"></enclosure>
-      <guid>http://openclipart.org/detail/71/house-outlines-by-rejon</guid>
-      <cc:license>http://creativecommons.org/licenses/publicdomain</cc:license>
-      <media:thumbnail url="http://openclipart.org/image/90px/svg_to_png/71/rejon_House_Outlines.png"></media:thumbnail>
-    </item>
-    <item>
-      <title>Houses on the Horizon</title>
-      <link>http://openclipart.org/detail/72/houses-on-the-horizon-by-rejon</link>
-      <pubDate>Tue, 29 Aug 2006 23:53:03 -0400</pubDate>
-      <dc:creator>rejon</dc:creator>
-      <description>This is another house shot but more landscape and less detailed.</description>
-      <enclosure url="http://openclipart.org/people/rejon/rejon_Houses_on_the_Horizon.svg" type="image/svg+xml" length="59480"></enclosure>
-      <guid>http://openclipart.org/detail/72/houses-on-the-horizon-by-rejon</guid>
-      <cc:license>http://creativecommons.org/licenses/publicdomain</cc:license>
-      <media:thumbnail url="http://openclipart.org/image/90px/svg_to_png/72/rejon_Houses_on_the_Horizon.png"></media:thumbnail>
-    </item>
-    <item>
-      <title>Hammer</title>
-      <link>http://openclipart.org/detail/73/hammer-by-rejon</link>
-      <pubDate>Wed, 30 Aug 2006 00:03:02 -0400</pubDate>
-      <dc:creator>rejon</dc:creator>
-      <description>I removed the wrench and uploaded just the hammer from this. Its a cheap remix, but explains the concept visually :)</description>
-      <enclosure url="http://openclipart.org/people/rejon/rejon_Hammer.svg" type="image/svg+xml" length="14122"></enclosure>
-      <guid>http://openclipart.org/detail/73/hammer-by-rejon</guid>
-      <cc:license>http://creativecommons.org/licenses/publicdomain</cc:license>
-      <media:thumbnail url="http://openclipart.org/image/90px/svg_to_png/73/rejon_Hammer.png"></media:thumbnail>
-    </item>
-    <item>
-      <title>Flower</title>
-      <link>http://openclipart.org/detail/74/flower-by-peterm</link>
-      <pubDate>Wed, 30 Aug 2006 00:01:20 -0400</pubDate>
-      <dc:creator>PeterM</dc:creator>
-      <description>A cartoon flower.</description>
-      <enclosure url="http://openclipart.org/people/PeterM/PeterM_Flower.svg" type="image/svg+xml" length="4964"></enclosure>
-      <guid>http://openclipart.org/detail/74/flower-by-peterm</guid>
-      <cc:license>http://creativecommons.org/licenses/publicdomain</cc:license>
-      <media:thumbnail url="http://openclipart.org/image/90px/svg_to_png/74/PeterM_Flower.png"></media:thumbnail>
-    </item>
-    <item>
-      <title>Mouse</title>
-      <link>http://openclipart.org/detail/75/mouse-by-peterm</link>
-      <pubDate>Wed, 30 Aug 2006 04:10:20 -0400</pubDate>
-      <dc:creator>PeterM</dc:creator>
-      <description>A red mouse cartoon with headphones on.</description>
-      <enclosure url="http://openclipart.org/people/PeterM/PeterM_Mouse.svg" type="image/svg+xml" length="13859"></enclosure>
-      <guid>http://openclipart.org/detail/75/mouse-by-peterm</guid>
-      <cc:license>http://creativecommons.org/licenses/publicdomain</cc:license>
-      <media:thumbnail url="http://openclipart.org/image/90px/svg_to_png/75/PeterM_Mouse.png"></media:thumbnail>
-    </item>
-    <item>
-      <title>Houses on the horizon - Starburst remix</title>
-      <link>http://openclipart.org/detail/76/houses-on-the-horizon---starburst-remix-by-andy</link>
-      <pubDate>Wed, 30 Aug 2006 19:53:29 -0400</pubDate>
-      <dc:creator>Andy</dc:creator>
-      <description>small colour remix of rejons houses on the horizon tracing.  Looks a little better with blur filters applied but they were removed for compatibility.</description>
-      <enclosure url="http://openclipart.org/people/Andy/Andy_Houses_on_the_horizon_-_Starburst_remix.svg" type="image/svg+xml" length="23928"></enclosure>
-      <guid>http://openclipart.org/detail/76/houses-on-the-horizon---starburst-remix-by-andy</guid>
-      <cc:license>http://creativecommons.org/licenses/publicdomain</cc:license>
-      <media:thumbnail url="http://openclipart.org/image/90px/svg_to_png/76/Andy_Houses_on_the_horizon_-_Starburst_remix.png"></media:thumbnail>
-    </item>
-    <item>
-      <title>Sunset Gradient</title>
-      <link>http://openclipart.org/detail/77/sunset-gradient-by-zeimusu</link>
-      <pubDate>Thu, 31 Aug 2006 04:34:11 -0400</pubDate>
-      <dc:creator>zeimusu</dc:creator>
-      <description>Based on photo of the winter sky, shortly after sundown.</description>
-      <enclosure url="http://openclipart.org/people/zeimusu/zeimusu_Sunset_Gradient.svg" type="image/svg+xml" length="3992"></enclosure>
-      <guid>http://openclipart.org/detail/77/sunset-gradient-by-zeimusu</guid>
-      <cc:license>http://creativecommons.org/licenses/publicdomain</cc:license>
-      <media:thumbnail url="http://openclipart.org/image/90px/svg_to_png/77/zeimusu_Sunset_Gradient.png"></media:thumbnail>
-    </item>
-    <item>
-      <title>Dinosaur laid an egg</title>
-      <link>http://openclipart.org/detail/78/dinosaur-laid-an-egg-by-zeimusu</link>
-      <pubDate>Thu, 31 Aug 2006 05:19:34 -0400</pubDate>
-      <dc:creator>zeimusu</dc:creator>
-      <description>A dinosaur laying an egg. From a random line drawn with snap to grid.</description>
-      <enclosure url="http://openclipart.org/people/zeimusu/zeimusu_Dinosaur_laid_an_egg.svg" type="image/svg+xml" length="15632"></enclosure>
-      <guid>http://openclipart.org/detail/78/dinosaur-laid-an-egg-by-zeimusu</guid>
-      <cc:license>http://creativecommons.org/licenses/publicdomain</cc:license>
-      <media:thumbnail url="http://openclipart.org/image/90px/svg_to_png/78/zeimusu_Dinosaur_laid_an_egg.png"></media:thumbnail>
-    </item>
-    <item>
-      <title>Feather</title>
-      <link>http://openclipart.org/detail/79/feather-by-peterm</link>
-      <pubDate>Fri, 01 Sep 2006 00:09:09 -0400</pubDate>
-      <dc:creator>PeterM</dc:creator>
-      <description>A feather, with gradients, used for writing.</description>
-      <enclosure url="http://openclipart.org/people/PeterM/PeterM_Feather.svg" type="image/svg+xml" length="81708"></enclosure>
-      <guid>http://openclipart.org/detail/79/feather-by-peterm</guid>
-      <cc:license>http://creativecommons.org/licenses/publicdomain</cc:license>
-      <media:thumbnail url="http://openclipart.org/image/90px/svg_to_png/79/PeterM_Feather.png"></media:thumbnail>
-    </item>
-    <item>
-      <title>Tree</title>
-      <link>http://openclipart.org/detail/80/tree-by-peterm</link>
-      <pubDate>Fri, 01 Sep 2006 00:14:35 -0400</pubDate>
-      <dc:creator>PeterM</dc:creator>
-      <description>A simple tree.</description>
-      <enclosure url="http://openclipart.org/people/PeterM/PeterM_Tree.svg" type="image/svg+xml" length="4500"></enclosure>
-      <guid>http://openclipart.org/detail/80/tree-by-peterm</guid>
-      <cc:license>http://creativecommons.org/licenses/publicdomain</cc:license>
-      <media:thumbnail url="http://openclipart.org/image/90px/svg_to_png/80/PeterM_Tree.png"></media:thumbnail>
-    </item>
-    <item>
-      <title>CRT Monitor with Power Light</title>
-      <link>http://openclipart.org/detail/81/crt-monitor-with-power-light-by-roan</link>
-      <pubDate>Fri, 01 Sep 2006 15:46:40 -0400</pubDate>
-      <dc:creator>roan</dc:creator>
-      <description>A CRT computer monitor.</description>
-      <enclosure url="http://openclipart.org/people/roan/roan_CRT_Monitor_with_Power_Light.svg" type="image/svg+xml" length="60219"></enclosure>
-      <guid>http://openclipart.org/detail/81/crt-monitor-with-power-light-by-roan</guid>
-      <cc:license>http://creativecommons.org/licenses/publicdomain</cc:license>
-      <media:thumbnail url="http://openclipart.org/image/90px/svg_to_png/81/roan_CRT_Monitor_with_Power_Light.png"></media:thumbnail>
-    </item>
-    <item>
-      <title>ussr calculator</title>
-      <link>http://openclipart.org/detail/83/ussr-calculator-by-molumen</link>
-      <pubDate>Sun, 03 Sep 2006 00:09:57 -0400</pubDate>
-      <dc:creator>molumen</dc:creator>
-      <description>Scheme/drawing of a calculator from USSR.</description>
-      <enclosure url="http://openclipart.org/people/molumen/molumen_ussr_calculator.svg" type="image/svg+xml" length="242306"></enclosure>
-      <guid>http://openclipart.org/detail/83/ussr-calculator-by-molumen</guid>
-      <cc:license>http://creativecommons.org/licenses/publicdomain</cc:license>
-      <media:thumbnail url="http://openclipart.org/image/90px/svg_to_png/83/molumen_ussr_calculator.png"></media:thumbnail>
-    </item>
-    <item>
-      <title>castle</title>
-      <link>http://openclipart.org/detail/85/castle-by-theresaknott</link>
-      <pubDate>Sun, 03 Sep 2006 02:39:11 -0400</pubDate>
-      <dc:creator>TheresaKnott</dc:creator>
-      <description>Fantasy castle.</description>
-      <enclosure url="http://openclipart.org/people/TheresaKnott/TheresaKnott_castle.svg" type="image/svg+xml" length="116346"></enclosure>
-      <guid>http://openclipart.org/detail/85/castle-by-theresaknott</guid>
-      <cc:license>http://creativecommons.org/licenses/publicdomain</cc:license>
-      <media:thumbnail url="http://openclipart.org/image/90px/svg_to_png/85/TheresaKnott_castle.png"></media:thumbnail>
-    </item>
-  </channel>
+                [b]This illustration uses clean SVG with a separated  area to theme elements in the design. Open it up in a plain text editor before loading into your favorite SVG editor for a world of fun[/b]
+            </description>
+            <enclosure url="http://openclipart.org/people/Andy/Andy_Trash_Can.svg" type="image/svg+xml" length="10738"></enclosure>
+            <guid>http://openclipart.org/detail/68/trash-can-by-andy</guid>
+            <cc:license>http://creativecommons.org/licenses/publicdomain</cc:license>
+            <media:thumbnail url="http://openclipart.org/image/90px/svg_to_png/68/Andy_Trash_Can.png"></media:thumbnail>
+        </item>
+        <item>
+            <title>Ant Icon</title>
+            <link>http://openclipart.org/detail/69/ant-icon-by-rejon</link>
+            <pubDate>Tue, 29 Aug 2006 21:35:51 -0400</pubDate>
+            <dc:creator>rejon</dc:creator>
+            <description>This is a lame flat version of Andy's ant ready for use as a solid element in a logo or on a poster.</description>
+            <enclosure url="http://openclipart.org/people/rejon/rejon_Ant_Icon.svg" type="image/svg+xml" length="8869"></enclosure>
+            <guid>http://openclipart.org/detail/69/ant-icon-by-rejon</guid>
+            <cc:license>http://creativecommons.org/licenses/publicdomain</cc:license>
+            <media:thumbnail url="http://openclipart.org/image/90px/svg_to_png/69/rejon_Ant_Icon.png"></media:thumbnail>
+        </item>
+        <item>
+            <title>Nicu's crash cchost file (fixed)</title>
+            <link>http://openclipart.org/detail/70/nicus-crash-cchost-file-by-rejon</link>
+            <pubDate>Tue, 29 Aug 2006 23:26:09 -0400</pubDate>
+            <dc:creator>rejon</dc:creator>
+            <description>Nicu said this would crash ccHost, but I fixed it so it does not!</description>
+            <enclosure url="http://openclipart.org/people/rejon/rejon_Nicu_s_crash_cchost_file.svg" type="image/svg+xml" length="67432"></enclosure>
+            <guid>http://openclipart.org/detail/70/nicus-crash-cchost-file-by-rejon</guid>
+            <cc:license>http://creativecommons.org/licenses/publicdomain</cc:license>
+            <media:thumbnail url="http://openclipart.org/image/90px/svg_to_png/70/rejon_Nicu_s_crash_cchost_file.png"></media:thumbnail>
+        </item>
+        <item>
+            <title>House Outlines</title>
+            <link>http://openclipart.org/detail/71/house-outlines-by-rejon</link>
+            <pubDate>Tue, 29 Aug 2006 23:49:34 -0400</pubDate>
+            <dc:creator>rejon</dc:creator>
+            <description>This is a nice house outline I traced and abstracted in Inkscape.</description>
+            <enclosure url="http://openclipart.org/people/rejon/rejon_House_Outlines.svg" type="image/svg+xml" length="144058"></enclosure>
+            <guid>http://openclipart.org/detail/71/house-outlines-by-rejon</guid>
+            <cc:license>http://creativecommons.org/licenses/publicdomain</cc:license>
+            <media:thumbnail url="http://openclipart.org/image/90px/svg_to_png/71/rejon_House_Outlines.png"></media:thumbnail>
+        </item>
+        <item>
+            <title>Houses on the Horizon</title>
+            <link>http://openclipart.org/detail/72/houses-on-the-horizon-by-rejon</link>
+            <pubDate>Tue, 29 Aug 2006 23:53:03 -0400</pubDate>
+            <dc:creator>rejon</dc:creator>
+            <description>This is another house shot but more landscape and less detailed.</description>
+            <enclosure url="http://openclipart.org/people/rejon/rejon_Houses_on_the_Horizon.svg" type="image/svg+xml" length="59480"></enclosure>
+            <guid>http://openclipart.org/detail/72/houses-on-the-horizon-by-rejon</guid>
+            <cc:license>http://creativecommons.org/licenses/publicdomain</cc:license>
+            <media:thumbnail url="http://openclipart.org/image/90px/svg_to_png/72/rejon_Houses_on_the_Horizon.png"></media:thumbnail>
+        </item>
+        <item>
+            <title>Hammer</title>
+            <link>http://openclipart.org/detail/73/hammer-by-rejon</link>
+            <pubDate>Wed, 30 Aug 2006 00:03:02 -0400</pubDate>
+            <dc:creator>rejon</dc:creator>
+            <description>I removed the wrench and uploaded just the hammer from this. Its a cheap remix, but explains the concept visually :)</description>
+            <enclosure url="http://openclipart.org/people/rejon/rejon_Hammer.svg" type="image/svg+xml" length="14122"></enclosure>
+            <guid>http://openclipart.org/detail/73/hammer-by-rejon</guid>
+            <cc:license>http://creativecommons.org/licenses/publicdomain</cc:license>
+            <media:thumbnail url="http://openclipart.org/image/90px/svg_to_png/73/rejon_Hammer.png"></media:thumbnail>
+        </item>
+        <item>
+            <title>Flower</title>
+            <link>http://openclipart.org/detail/74/flower-by-peterm</link>
+            <pubDate>Wed, 30 Aug 2006 00:01:20 -0400</pubDate>
+            <dc:creator>PeterM</dc:creator>
+            <description>A cartoon flower.</description>
+            <enclosure url="http://openclipart.org/people/PeterM/PeterM_Flower.svg" type="image/svg+xml" length="4964"></enclosure>
+            <guid>http://openclipart.org/detail/74/flower-by-peterm</guid>
+            <cc:license>http://creativecommons.org/licenses/publicdomain</cc:license>
+            <media:thumbnail url="http://openclipart.org/image/90px/svg_to_png/74/PeterM_Flower.png"></media:thumbnail>
+        </item>
+        <item>
+            <title>Mouse</title>
+            <link>http://openclipart.org/detail/75/mouse-by-peterm</link>
+            <pubDate>Wed, 30 Aug 2006 04:10:20 -0400</pubDate>
+            <dc:creator>PeterM</dc:creator>
+            <description>A red mouse cartoon with headphones on.</description>
+            <enclosure url="http://openclipart.org/people/PeterM/PeterM_Mouse.svg" type="image/svg+xml" length="13859"></enclosure>
+            <guid>http://openclipart.org/detail/75/mouse-by-peterm</guid>
+            <cc:license>http://creativecommons.org/licenses/publicdomain</cc:license>
+            <media:thumbnail url="http://openclipart.org/image/90px/svg_to_png/75/PeterM_Mouse.png"></media:thumbnail>
+        </item>
+        <item>
+            <title>Houses on the horizon - Starburst remix</title>
+            <link>http://openclipart.org/detail/76/houses-on-the-horizon---starburst-remix-by-andy</link>
+            <pubDate>Wed, 30 Aug 2006 19:53:29 -0400</pubDate>
+            <dc:creator>Andy</dc:creator>
+            <description>small colour remix of rejons houses on the horizon tracing.  Looks a little better with blur filters applied but they were removed for compatibility.</description>
+            <enclosure url="http://openclipart.org/people/Andy/Andy_Houses_on_the_horizon_-_Starburst_remix.svg" type="image/svg+xml" length="23928"></enclosure>
+            <guid>http://openclipart.org/detail/76/houses-on-the-horizon---starburst-remix-by-andy</guid>
+            <cc:license>http://creativecommons.org/licenses/publicdomain</cc:license>
+            <media:thumbnail url="http://openclipart.org/image/90px/svg_to_png/76/Andy_Houses_on_the_horizon_-_Starburst_remix.png"></media:thumbnail>
+        </item>
+        <item>
+            <title>Sunset Gradient</title>
+            <link>http://openclipart.org/detail/77/sunset-gradient-by-zeimusu</link>
+            <pubDate>Thu, 31 Aug 2006 04:34:11 -0400</pubDate>
+            <dc:creator>zeimusu</dc:creator>
+            <description>Based on photo of the winter sky, shortly after sundown.</description>
+            <enclosure url="http://openclipart.org/people/zeimusu/zeimusu_Sunset_Gradient.svg" type="image/svg+xml" length="3992"></enclosure>
+            <guid>http://openclipart.org/detail/77/sunset-gradient-by-zeimusu</guid>
+            <cc:license>http://creativecommons.org/licenses/publicdomain</cc:license>
+            <media:thumbnail url="http://openclipart.org/image/90px/svg_to_png/77/zeimusu_Sunset_Gradient.png"></media:thumbnail>
+        </item>
+        <item>
+            <title>Dinosaur laid an egg</title>
+            <link>http://openclipart.org/detail/78/dinosaur-laid-an-egg-by-zeimusu</link>
+            <pubDate>Thu, 31 Aug 2006 05:19:34 -0400</pubDate>
+            <dc:creator>zeimusu</dc:creator>
+            <description>A dinosaur laying an egg. From a random line drawn with snap to grid.</description>
+            <enclosure url="http://openclipart.org/people/zeimusu/zeimusu_Dinosaur_laid_an_egg.svg" type="image/svg+xml" length="15632"></enclosure>
+            <guid>http://openclipart.org/detail/78/dinosaur-laid-an-egg-by-zeimusu</guid>
+            <cc:license>http://creativecommons.org/licenses/publicdomain</cc:license>
+            <media:thumbnail url="http://openclipart.org/image/90px/svg_to_png/78/zeimusu_Dinosaur_laid_an_egg.png"></media:thumbnail>
+        </item>
+        <item>
+            <title>Feather</title>
+            <link>http://openclipart.org/detail/79/feather-by-peterm</link>
+            <pubDate>Fri, 01 Sep 2006 00:09:09 -0400</pubDate>
+            <dc:creator>PeterM</dc:creator>
+            <description>A feather, with gradients, used for writing.</description>
+            <enclosure url="http://openclipart.org/people/PeterM/PeterM_Feather.svg" type="image/svg+xml" length="81708"></enclosure>
+            <guid>http://openclipart.org/detail/79/feather-by-peterm</guid>
+            <cc:license>http://creativecommons.org/licenses/publicdomain</cc:license>
+            <media:thumbnail url="http://openclipart.org/image/90px/svg_to_png/79/PeterM_Feather.png"></media:thumbnail>
+        </item>
+        <item>
+            <title>Tree</title>
+            <link>http://openclipart.org/detail/80/tree-by-peterm</link>
+            <pubDate>Fri, 01 Sep 2006 00:14:35 -0400</pubDate>
+            <dc:creator>PeterM</dc:creator>
+            <description>A simple tree.</description>
+            <enclosure url="http://openclipart.org/people/PeterM/PeterM_Tree.svg" type="image/svg+xml" length="4500"></enclosure>
+            <guid>http://openclipart.org/detail/80/tree-by-peterm</guid>
+            <cc:license>http://creativecommons.org/licenses/publicdomain</cc:license>
+            <media:thumbnail url="http://openclipart.org/image/90px/svg_to_png/80/PeterM_Tree.png"></media:thumbnail>
+        </item>
+        <item>
+            <title>CRT Monitor with Power Light</title>
+            <link>http://openclipart.org/detail/81/crt-monitor-with-power-light-by-roan</link>
+            <pubDate>Fri, 01 Sep 2006 15:46:40 -0400</pubDate>
+            <dc:creator>roan</dc:creator>
+            <description>A CRT computer monitor.</description>
+            <enclosure url="http://openclipart.org/people/roan/roan_CRT_Monitor_with_Power_Light.svg" type="image/svg+xml" length="60219"></enclosure>
+            <guid>http://openclipart.org/detail/81/crt-monitor-with-power-light-by-roan</guid>
+            <cc:license>http://creativecommons.org/licenses/publicdomain</cc:license>
+            <media:thumbnail url="http://openclipart.org/image/90px/svg_to_png/81/roan_CRT_Monitor_with_Power_Light.png"></media:thumbnail>
+        </item>
+        <item>
+            <title>ussr calculator</title>
+            <link>http://openclipart.org/detail/83/ussr-calculator-by-molumen</link>
+            <pubDate>Sun, 03 Sep 2006 00:09:57 -0400</pubDate>
+            <dc:creator>molumen</dc:creator>
+            <description>Scheme/drawing of a calculator from USSR.</description>
+            <enclosure url="http://openclipart.org/people/molumen/molumen_ussr_calculator.svg" type="image/svg+xml" length="242306"></enclosure>
+            <guid>http://openclipart.org/detail/83/ussr-calculator-by-molumen</guid>
+            <cc:license>http://creativecommons.org/licenses/publicdomain</cc:license>
+            <media:thumbnail url="http://openclipart.org/image/90px/svg_to_png/83/molumen_ussr_calculator.png"></media:thumbnail>
+        </item>
+        <item>
+            <title>castle</title>
+            <link>http://openclipart.org/detail/85/castle-by-theresaknott</link>
+            <pubDate>Sun, 03 Sep 2006 02:39:11 -0400</pubDate>
+            <dc:creator>TheresaKnott</dc:creator>
+            <description>Fantasy castle.</description>
+            <enclosure url="http://openclipart.org/people/TheresaKnott/TheresaKnott_castle.svg" type="image/svg+xml" length="116346"></enclosure>
+            <guid>http://openclipart.org/detail/85/castle-by-theresaknott</guid>
+            <cc:license>http://creativecommons.org/licenses/publicdomain</cc:license>
+            <media:thumbnail url="http://openclipart.org/image/90px/svg_to_png/85/TheresaKnott_castle.png"></media:thumbnail>
+        </item>
+    </channel>
 </rss>
