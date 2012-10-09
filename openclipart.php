@@ -1,5 +1,4 @@
 <?php
-
 // This file is part of Moodle - http://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
@@ -13,7 +12,7 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.R
+// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
  * openclipart class
@@ -23,15 +22,16 @@
  * @author     Benjamin Ellis benjamin.c.ellis@gmail.com
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-define('openclipart_THUMBS_PER_PAGE', 24);
-define('openclipart_FILE_NS', 6);
-define('openclipart_IMAGE_SIDE_LENGTH', 1024);
+define('OPENCLIPART_THUMBS_PER_PAGE', 24);
+define('OPENCLIPART_FILE_NS', 6);
+define('OPENCLIPART_IMAGE_SIDE_LENGTH', 1024);
 
 class openclipart {
-
-    private $_conn = null;
-    private $_param = array();
-
+    /**
+     * Constructor
+     *
+     * @param string $url the url to get the clipart
+     */
     public function __construct($url = '') {
         if (empty($url)) {
             $this->api = 'http://commons.openclipart.org/w/api.php';
@@ -43,75 +43,13 @@ class openclipart {
         $this->_conn = new curl(array('cache' => true, 'debug' => false));
     }
 
-    public function login($user, $pass) {
-        $this->_param['action'] = 'login';
-        $this->_param['lgname'] = $user;
-        $this->_param['lgpassword'] = $pass;
-        $content = $this->_conn->post($this->api, $this->_param);
-        $result = unserialize($content);
-        if (!empty($result['result']['sessionid'])) {
-            $this->userid = $result['result']['lguserid'];
-            $this->username = $result['result']['lgusername'];
-            $this->token = $result['result']['lgtoken'];
-            return true;
-        } else {
-            return false;
-        }
-    }
-
-    public function logout() {
-        $this->_param['action'] = 'logout';
-        $content = $this->_conn->post($this->api, $this->_param);
-        return;
-    }
-
-    public function get_image_url($titles) {
-        $image_urls = array();
-        $this->_param['action'] = 'query';
-        if (is_array($titles)) {
-            foreach ($titles as $title) {
-                $this->_param['titles'] .= ('|' . urldecode($title));
-            }
-        } else {
-            $this->_param['titles'] = urldecode($title);
-        }
-        $this->_param['prop'] = 'imageinfo';
-        $this->_param['iiprop'] = 'url';
-        $content = $this->_conn->post($this->api, $this->_param);
-        $result = unserialize($content);
-        foreach ($result['query']['pages'] as $page) {
-            if (!empty($page['imageinfo'][0]['url'])) {
-                $image_urls[] = $page['imageinfo'][0]['url'];
-            }
-        }
-        return $image_urls;
-    }
-
-    public function get_images_by_page($title) {
-        $image_urls = array();
-        $this->_param['action'] = 'query';
-        $this->_param['generator'] = 'images';
-        $this->_param['titles'] = urldecode($title);
-        $this->_param['prop'] = 'images|info|imageinfo';
-        $this->_param['iiprop'] = 'url';
-        $content = $this->_conn->post($this->api, $this->_param);
-        $result = unserialize($content);
-        if (!empty($result['query']['pages'])) {
-            foreach ($result['query']['pages'] as $page) {
-                $image_urls[$page['title']] = $page['imageinfo'][0]['url'];
-            }
-        }
-        return $image_urls;
-    }
-
     /**
      * Generate thumbnail URL from image URL.
      *
-     * @param string $image_url
-     * @param int $orig_width
-     * @param int $orig_height
-     * @param int $thumb_width
-     * @global object OUTPUT
+     * @param string $image_url - then clipart's url
+     * @param int $orig_width - the width
+     * @param int $orig_height - the height
+     * @param int $thumb_width  - the required width of the thumbnail
      * @return string
      */
     public function get_thumb_url($image_url, $orig_width, $orig_height, $thumb_width = 75) {
@@ -125,7 +63,7 @@ class openclipart {
             if ($image_url) {
                 $short_path = str_replace($commons_main_dir, '', $image_url);
                 $extension = pathinfo($short_path, PATHINFO_EXTENSION);
-                if (strcmp($extension, 'gif') == 0) {  // no thumb for gifs
+                if (strcmp($extension, 'gif') == 0) {  // No thumb for gifs.
                     return $OUTPUT->pix_url(file_extension_icon('xx.jpg', 32));
                 }
                 $dir_parts = explode('/', $short_path);
@@ -134,7 +72,7 @@ class openclipart {
                     $thumb_width = round($thumb_width * $orig_width / $orig_height);
                 }
                 $thumb_url = $commons_main_dir . 'thumb/' . implode('/', $dir_parts) . '/' . $thumb_width . 'px-' . $file_name;
-                if (strcmp($extension, 'svg') == 0) {  // png thumb for svg-s
+                if (strcmp($extension, 'svg') == 0) {  // Png thumb for svg-s.
                     $thumb_url .= '.png';
                 }
             }
@@ -145,7 +83,8 @@ class openclipart {
     /**
      * Search for images and return photos array.
      *
-     * @param string $keyword
+     * @param string $keyword - the saerch term/s
+     * @param int $page - the page to display - not really used in this version of the plugin
      * @return array
      */
     public function search_images($keyword, $page = 0) {
@@ -153,14 +92,14 @@ class openclipart {
         $this->_param['action'] = 'query';
         $this->_param['generator'] = 'search';
         $this->_param['gsrsearch'] = $keyword;
-        $this->_param['gsrnamespace'] = openclipart_FILE_NS;
-        $this->_param['gsrlimit'] = openclipart_THUMBS_PER_PAGE;
-        $this->_param['gsroffset'] = $page * openclipart_THUMBS_PER_PAGE;
+        $this->_param['gsrnamespace'] = OPENCLIPART_FILE_NS;
+        $this->_param['gsrlimit'] = OPENCLIPART_THUMBS_PER_PAGE;
+        $this->_param['gsroffset'] = $page * OPENCLIPART_THUMBS_PER_PAGE;
         $this->_param['prop'] = 'imageinfo';
         $this->_param['iiprop'] = 'url|dimensions|mime';
-        $this->_param['iiurlwidth'] = openclipart_IMAGE_SIDE_LENGTH;
-        $this->_param['iiurlheight'] = openclipart_IMAGE_SIDE_LENGTH;
-        // didn't work with POST
+        $this->_param['iiurlwidth'] = OPENCLIPART_IMAGE_SIDE_LENGTH;
+        $this->_param['iiurlheight'] = OPENCLIPART_IMAGE_SIDE_LENGTH;
+        // Didn't work with POST.
         $content = $this->_conn->get($this->api, $this->_param);
         $result = unserialize($content);
         if (!empty($result['query']['pages'])) {
@@ -168,30 +107,32 @@ class openclipart {
                 $title = $page['title'];
                 $file_type = $page['imageinfo'][0]['mime'];
                 $image_types = array('image/jpeg', 'image/png', 'image/gif', 'image/svg+xml');
-                if (in_array($file_type, $image_types)) {  // is image
-                    $thumbnail = $this->get_thumb_url($page['imageinfo'][0]['url'], $page['imageinfo'][0]['width'], $page['imageinfo'][0]['height']);
-                    $source = $page['imageinfo'][0]['thumburl'];        // upload scaled down image
+                if (in_array($file_type, $image_types)) {  // Is image.
+                    $thumbnail = $this->get_thumb_url($page['imageinfo'][0]['url'],
+                        $page['imageinfo'][0]['width'], $page['imageinfo'][0]['height']);
+                    $source = $page['imageinfo'][0]['thumburl'];        // Upload scaled down image.
                     $extension = pathinfo($title, PATHINFO_EXTENSION);
-                    if (strcmp($extension, 'svg') == 0) {               // upload png version of svg-s
+                    if (strcmp($extension, 'svg') == 0) {               // Upload png version of svg-s.
                         $title .= '.png';
                     }
-                } else {                                   // other file types
+                } else {                                   // Other file types.
                     $thumbnail = '';
                     $source = $page['imageinfo'][0]['url'];
                 }
                 $files_array[] = array(
-                    'title' => substr($title, 5), // chop off 'File:'
+                    'title' => substr($title, 5),   // Chop off 'File:'.
                     'thumbnail' => $thumbnail,
                     'thumbnail_width' => 120,
                     'thumbnail_height' => 120,
-                    // plugin-dependent unique path to the file (id, url, path, etc.)
+                    // Plugin-dependent unique path to the file (id, url, path, etc.).
                     'source' => $source,
-                    // the accessible url of the file
+                    // The accessible url of the file.
                     'url' => $page['imageinfo'][0]['descriptionurl']
                 );
             }
         }
         return $files_array;
     }
-
 }
+
+/* ?> */

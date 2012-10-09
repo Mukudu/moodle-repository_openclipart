@@ -24,7 +24,6 @@
  */
 
 $capabilities = array(
-
     'repository/openclipart:view' => array(
         'captype' => 'read',
         'contextlevel' => CONTEXT_MODULE,
@@ -33,3 +32,5 @@ $capabilities = array(
         )
     )
 );
+
+/* ?> */

@@ -23,11 +23,11 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-$string['keyword'] = 'Search Term';
+$string['keyword'] = 'Search term';
 $string['pluginname'] = 'Open Clipart';
-$string['pluginname_help'] = 'A Open Clipart repository';
-$string['openclipart:view'] = 'View Open Clipart repository';
-$string['configplugin'] = 'Open Clipart Repository Configuration';
+$string['pluginname_help'] = 'An open clipart repository';
+$string['openclipart:view'] = 'View open clipart repository';
+$string['configplugin'] = 'Open clipart repository configuration';
 $string['recent'] = 'Recent';
 $string['imageheight'] = 'Height of clipart images';
 $string['imageheight_help'] = 'This is the height of the selected images in pixels - default is {$a}px.';
