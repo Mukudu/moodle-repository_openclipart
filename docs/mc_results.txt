@@ -1,0 +1,7 @@
+repository/openclipart//db/access.php
+repository/openclipart//lang/en/repository_openclipart.php
+repository/openclipart//lib.php
+    Line 30: Class repository_openclipart is not documented
+repository/openclipart//openclipart.php
+    Line 29: Class openclipart is not documented
+repository/openclipart//version.php
