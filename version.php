@@ -24,8 +24,10 @@
  */
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version = 2012100803;                      // The current plugin version (Date: YYYYMMDDXX).
+$plugin->version = 2012100805;                      // The current plugin version (Date: YYYYMMDDXX).
 $plugin->requires = 2011070100;                     // Requires this Moodle version.
 $plugin->component = 'repository_openclipart';      // Full name of the plugin (used for diagnostics).
+$plugin->release = '0.1';                           // 1st beat release
+$plugin->maturity = MATURITY_BETA;                  // Beta - when will I be mature :(
 
 /* ?> */

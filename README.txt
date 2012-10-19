@@ -1,6 +1,8 @@
 Description
 ===========
 Moodle Plugin: repository_openclipart
+Release : 0.1
+Maturity : Beta
 
 A simple repository moodle plugin that allows the user to search and import clipart images from openclipart.org.  The plugin displays the most recent additions to openclipart.org when first opened and the user must do a search to find images they wish to use.
 
