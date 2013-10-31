@@ -85,7 +85,7 @@ class repository_openclipart extends repository {
      *
      * @param string $text
      */
-    public function search($text) {
+    public function search($text, $page = 0) {
         $text = urlencode($text);
         $recent = OPENCLIPART_URL . $text;
         return($this->_getfilelist($recent, $text));
@@ -103,7 +103,7 @@ class repository_openclipart extends repository {
      * config form
      * @param object $mform - form object
      */
-    public function type_config_form($mform) {
+    public static function type_config_form($mform, $classname = 'repository') {
         parent::type_config_form($mform);   // Name for the repo.
 
         $conf = get_config('openclipart');
